@@ -12,6 +12,8 @@ nav:
   - README: index.md
   - Navigation: navigation.md
   - Issues Index: issues-index.md
+  - Policies:
+      - Handbook Spec v0.1: policies/handbook-spec-v0.1.md
   - FDD:
       - QoE Normalization: fdd/qoe.md
       - Net debt Definition: fdd/net-debt.md
