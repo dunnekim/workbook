@@ -1,0 +1,28 @@
+site_name: FS Deals Handbook
+
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - content.code.copy
+
+nav:
+  - README: index.md
+  - Navigation: navigation.md
+  - Issues Index: issues-index.md
+  - FDD:
+      - QoE Normalization: fdd/qoe.md
+      - Net debt Definition: fdd/net-debt.md
+      - NWC Peg: fdd/nwc.md
+  - Valuation:
+      - EV→Equity Bridge: val/bridge.md
+      - Multiples & Peer Log: val/multiples.md
+      - DCF (FCFF): val/dcf-fcff.md
+      - DCF (FCFE): val/dcf-fcfe.md
+      - DDM (Conditional): val/ddm.md
+  - Defense & Libraries:
+      - WACC & Terminal Defense: defense/wacc-terminal.md
+      - Copy-ready Wording Library: libs/wording.md
+      - Failure Library: libs/failures.md
