@@ -1,0 +1,30 @@
+<div id="feedback-modal" class="wikidocs-modal" role="dialog" aria-labelledby="feedback-modal-title" aria-hidden="true" data-repo-url="{{ repo_url }}">
+  <div class="wikidocs-modal-overlay" id="feedback-modal-overlay"></div>
+  <div class="wikidocs-modal-content">
+    <div class="wikidocs-modal-header">
+      <h2 id="feedback-modal-title">피드백 보내기</h2>
+      <button class="wikidocs-modal-close" id="feedback-modal-close" aria-label="닫기">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="wikidocs-modal-body">
+      <p class="wikidocs-modal-description">
+        문서에 대한 의견이나 수정 요청이 있으시면 아래 버튼을 클릭하여 GitHub Issue를 작성해주세요.
+      </p>
+      <form id="feedback-form" method="get" action="" target="_blank">
+        <div class="wikidocs-form-group">
+          <label for="feedback-email">답장받을 이메일 (선택)</label>
+          <input type="email" id="feedback-email" name="email" placeholder="your-email@example.com" />
+        </div>
+        <div class="wikidocs-form-group">
+          <label for="feedback-body">하고 싶은 말 <span class="required">*</span></label>
+          <textarea id="feedback-body" name="body" rows="5" required placeholder="피드백 내용을 입력해주세요..."></textarea>
+        </div>
+        <div class="wikidocs-form-actions">
+          <button type="button" class="wikidocs-btn wikidocs-btn-secondary" id="feedback-cancel">취소</button>
+          <button type="submit" class="wikidocs-btn wikidocs-btn-primary" id="feedback-submit">GitHub Issue 작성</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

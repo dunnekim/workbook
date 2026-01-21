@@ -1,0 +1,35 @@
+<div class="wikidocs-page-footer">
+  <div class="wikidocs-page-meta">
+    {# 마지막 편집일시 #}
+    {% if page.meta.git_revision_date_localized %}
+      <div class="wikidocs-last-updated">
+        <span class="meta-label">마지막 편집일시:</span>
+        <span class="meta-value">{{ page.meta.git_revision_date_localized }}</span>
+      </div>
+    {% endif %}
+
+    {# 이전/다음 네비게이션 (Material 기본 기능 활용) #}
+    <div class="wikidocs-nav-links">
+      {% if page.previous_page %}
+        <a href="{{ page.previous_page.url | url }}" class="wikidocs-nav-link wikidocs-nav-prev">
+          ← 이전글: {{ page.previous_page.title }}
+        </a>
+      {% endif %}
+      {% if page.next_page %}
+        <a href="{{ page.next_page.url | url }}" class="wikidocs-nav-link wikidocs-nav-next">
+          다음글: {{ page.next_page.title }} →
+        </a>
+      {% endif %}
+    </div>
+  </div>
+
+  {# 피드백 버튼 #}
+  <div class="wikidocs-feedback-section">
+    <button id="feedback-btn" class="wikidocs-feedback-btn" aria-label="피드백 보내기">
+      피드백
+    </button>
+  </div>
+
+  {# 피드백 모달 #}
+  {% include "partials/feedback-modal.html" %}
+</div>
